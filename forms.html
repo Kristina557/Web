@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+	<meta charset="utf-8">
+	<title>forms</title>
+</head>
+<body scroll="yes">
+	<form name="forma1">
+		<p><b>Форма 1</b></p>
+		<h3>Анкета Студента</h3>
+		<b>Ваше имя: </b><input type="name"><br>
+		<p></p>
+		<b>Ваш пол: </b><br>
+		<input type="radio">Мужской<br>
+		<input type="radio">Женский<br>
+
+		<div class="course">
+			<b>На каком курсе вы учитесь?</b> 
+			<select name="language">
+				<option selected value="Первый">Первый</option>
+			  <option value="Второй">Второй</option>
+			  <option value="Третий">Третий</option>
+			  <option value="Четвертый">Четвертый</option>
+		  </select><br>
+		</div>
+
+		<div class="lang">
+			<b>Какие языки программирования вы знаете?</b><br>
+		  <input type="checkbox">Паскаль<br>
+		  <input type="checkbox">C++<br>
+		  <input type="checkbox">Java<br>
+		  <input type="checkbox">JavaScript<br>
+		  <input type="checkbox">C#<br>
+		</div>
+
+	  <b>Напишите несколько слов о себе: </b><br>
+	  <textarea cols="30" rows="3" placeholder="Не более 200 символов" wrap="off"></textarea><br>
+
+	   <input type="submit" name="submit" value="Отправить данные">
+     <input type="reset" name="reset" value="Очистить форму"><br>
+		</form>
+
+		<form name="forma2">
+			<p><b>Форма 2</b></p>
+			<p>Текст сообщения*</p>
+			<textarea class="msg" cols="30" rows="3" wrap="off"></textarea><br>
+
+			<p>Категория обращеия</p>
+			<p><select name="list1">
+		  <option>работа сайта</option>
+		  <option>Option</option>
+		  <option>Textarea</option>
+		  <option>Label</option>
+		  <option>Fieldset</option>
+		  <option>Legend</option>
+			</select></p>
+
+			<p>Ожидаемая дата ответа<br>(DD.MM.YYYY)</p>
+			<input type="date" id="date" name="date"/>
+
+			<p>Получить ответ по телефону</p>
+			<input type="checkbox">Да<br>
+
+			<p>Изображение (ваше фото, замечание)</p>
+			<input type="name">
+			<input type="button" name="button" value="Browse...">
+
+			<p>Разделы сайта, которые вам понравились</p>
+			<p><select name="list1" multiple size="4">
+		  <option>Каталог</option>
+		  <option>Поддержка</option>
+		  <option>Партнеры</option>
+		  <option>Компания</option>
+		  </select></p>
+
+		  Вы относите себя к<br>
+		  <input type="radio">конкурент<br>
+	    <input type="radio">партнер<br>
+	    <input type="radio">клиент<br>
+
+		</form>
+</body>
+</html>
+
+<style>
+	.msg {
+		overflow-y: scroll;
+	}
+	.course {
+		margin-bottom: 90px;
+	}
+	.lang {
+		margin-bottom: 20px;
+	}
+</style>
